@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffcf2;
+    font-family: 'Muli', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img.hidden {
+    box-shadow: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #333;
+    margin-top: auto;
+}
